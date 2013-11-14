@@ -25,3 +25,5 @@ Running this example requires an Android 4.0 or greater compatible emulator or d
 Notes
 -----
 * The example requires Android 4.0 or greater. This is due to bugs in java.net.URLConnection on Android versions prior to Honeycomb.
+* You can use your preferred network stack such as HttpClient or OkHttp by creating an implementation of `HttpAdapter` (part of the [app55-java](https://github.com/app55/app55-java) project) and passing it as a parameter when you create your `Gateway` instance.
+* The `DefaultHttpAdapter` uses an ExecutorThreadPool to implement asynchonous requests due to compatibility with multiple platforms. But by implementing your own `HttpAdapter` or subclassing `DefaultHttpAdapter` you can choose your own way of doing background requests that suit your app architecture.
