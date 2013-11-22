@@ -5,8 +5,8 @@ import com.app55.Gateway;
 
 public class Configuration
 {
-	private static final String	API_KEY_DEFAULT		= "TiD7zTo5ZFxQziRTndpjaCeXp7xNNTdl";
-	private static final String	API_SECRET_DEFAULT	= "190AvqIOlLwUhYn8vy7iIJPNw5NtS7UX";
+	private static final String	API_KEY_DEFAULT		= "enter api key here";
+	private static final String	API_SECRET_DEFAULT	= "enter api secret here";
 
 	public static final Gateway	GATEWAY				= new Gateway(Environment.SANDBOX, getApiKey(), getApiSecret());
 
